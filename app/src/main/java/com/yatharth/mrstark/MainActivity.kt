@@ -1,5 +1,6 @@
 package com.yatharth.mrstark
 
+import androidx.activity.compose.setContent
 import android.Manifest
 import android.content.Intent
 import android.app.SearchManager
