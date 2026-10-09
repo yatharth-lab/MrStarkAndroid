@@ -347,7 +347,7 @@ private fun startSpeechRecognition(
 private suspend fun callGemini(apiKey: String, prompt: String, history: List<ChatLine>): String =
     withContext(Dispatchers.IO) {
         try {
-            val url = URL("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${URLEncoder.encode(apiKey, "UTF-8")}")
+            val url = URL("https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${URLEncoder.encode(apiKey, "UTF-8")}")
             val connection = (url.openConnection() as HttpURLConnection).apply {
                 requestMethod = "POST"
                 connectTimeout = 15000
